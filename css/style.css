@@ -34,13 +34,7 @@ input[type="submit"] {
   padding: 20px;
 }
 
-.whatsapp {
-  margin-top: 20px;
-}
-
 .whatsapp-btn {
-  display: inline;
-  padding: 10px 15px;
   background-color: green;
   color: white;
   font-size: 20px;
