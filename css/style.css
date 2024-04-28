@@ -39,6 +39,8 @@ input[type="submit"] {
 }
 
 .whatsapp-btn {
+  display: inline;
+  padding: 10px 15px;
   background-color: green;
   color: white;
   font-size: 20px;
