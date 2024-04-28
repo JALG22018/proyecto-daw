@@ -6,26 +6,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contáctanos</title>
-
 </head>
 
 <body>
-    <form id="form">
-        <div class="field">
-            <label for="from_name">Nombre</label>
-            <input type="text" name="from_name" id="from_name">
+    <div class="container">
+        <div class="contact-info">
+            <h2>Contáctanos</h2>
+            <div class="member-info">
+                <p><strong>Integrante 1:</strong> Carnet: XXXXXXX, Email: integrante1@example.com</p>
+                <p><strong>Integrante 2:</strong> Carnet: XXXXXXX, Email: integrante2@example.com</p>
+            </div>
         </div>
-        <div class="field">
-            <label for="email_id">E-mail</label>
-            <input type="text" name="email_id" id="email_id">
+        <div class="social-media">
+            <h3>Síguenos en redes sociales:</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/UES" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com/UES_sv" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a></li>
+                <!-- Agrega más enlaces de redes sociales si es necesario -->
+            </ul>
         </div>
-        <div class="field">
-            <label for="message">Mensaje</label>
-            <input type="text" name="message" id="message">
+        <div class="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=123456789" target="_blank" class="whatsapp-btn">Contáctanos por WhatsApp</a>
         </div>
-
-        <input type="submit" id="button" value="Send Email">
-    </form>
+        <div class="contact-form">
+            <h3>O envíanos un mensaje:</h3>
+            <form id="form">
+                <div class="field">
+                    <label for="from_name">Nombre</label>
+                    <input type="text" name="from_name" id="from_name">
+                </div>
+                <div class="field">
+                    <label for="email_id">E-mail</label>
+                    <input type="text" name="email_id" id="email_id">
+                </div>
+                <div class="field">
+                    <label for="message">Mensaje</label>
+                    <input type="text" name="message" id="message">
+                </div>
+                <input type="submit" id="button" value="Enviar mensaje">
+            </form>
+        </div>
+    </div>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
