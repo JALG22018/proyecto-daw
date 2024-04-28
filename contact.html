@@ -12,28 +12,27 @@
 <body>
     <form id="form">
         <div class="field">
-            <label for="from_name">Nombre:</label>
-            <input type="text" name="from_name" id="from_name" required>
+            <label for="from_name">from_name</label>
+            <input type="text" name="from_name" id="from_name">
         </div>
         <div class="field">
-            <label for="email_id">Email:</label>
-            <input type="email" name="email_id" id="email_id" required>
+            <label for="email_id">email_id</label>
+            <input type="text" name="email_id" id="email_id">
         </div>
         <div class="field">
-            <label for="message">Mensaje:</label>
-            <textarea name="message" id="message" required></textarea>
+            <label for="message">message</label>
+            <input type="text" name="message" id="message">
         </div>
-    
+
+        <input type="submit" id="button" value="Send Email">
     </form>
-    
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script type="text/javascript">
         emailjs.init('wpXqdH21THOWaW59s')
 
     </script>
-
-    <script src="js/script.js"></script>
 
 </body>
 
