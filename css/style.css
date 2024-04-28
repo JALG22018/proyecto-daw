@@ -15,9 +15,7 @@ body {
   padding: 24px;
 }
 
-input,
-textarea,
-button {
+input, textarea, button {
   margin: 4px 0;
   padding: 8px;
 }
