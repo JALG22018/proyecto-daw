@@ -9,23 +9,58 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 
-const btn = document.getElementById('button');
+// Valida el formulario antes de enviarlo
+function validateForm() {
+    const name = document.getElementById('from_name').value;
+    const email = document.getElementById('email_id').value;
+    const message = document.getElementById('message').value;
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+    if (name.trim() === '') {
+        alert('Por favor, ingresa tu nombre.');
+        return false;
+    }
 
-   btn.value = 'Sending...';
+    if (email.trim() === '') {
+        alert('Por favor, ingresa tu correo electrónico.');
+        return false;
+    }
 
-   const serviceID = 'default_service';
-   const templateID = 'template_i0prtn8';
+    if (!isValidEmail(email)) {
+        alert('Por favor, ingresa un correo electrónico válido.');
+        return false;
+    }
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
+    if (message.trim() === '') {
+        alert('Por favor, ingresa un mensaje.');
+        return false;
+    }
+
+    return true;
+}
+
+// Verifica si el correo electrónico tiene un formato válido
+function isValidEmail(email) {
+    // Expresión regular para validar el formato del correo electrónico
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+}
+
+// Asigna la función de validación al evento 'submit' del formulario
+document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    if (validateForm()) {
+        // Si el formulario es válido, envía el correo electrónico
+        btn.value = 'Enviando...';
+        const serviceID = 'default_service';
+        const templateID = 'template_i0prtn8';
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.value = 'Enviar Email';
+                alert('¡Correo electrónico enviado!');
+            })
+            .catch((err) => {
+                btn.value = 'Enviar Email';
+                alert('Error al enviar el correo electrónico: ' + JSON.stringify(err));
+            });
+    }
 });
