@@ -19,7 +19,7 @@ function SendMail() {
   };
 
   emailjs
-    .send("service_os0d6pl", "template_7e92ekr", params)
+    .send("service_mr14mef", "template_i0prtn8", params)
     .then(function (res) {
       alert("Success! " + res.status);
     });
