@@ -4,58 +4,128 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contáctanos</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-
-    <script type="text/javascript">
-      emailjs.init("wpXqdH21THOWaW59s");
-    </script>
-
-    <script src="js/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "ues-blue": "#003D73",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .btn-whatsapp {
+          @apply bg-green-500 text-white font-bold py-2 px-4 rounded;
+        }
+      }
+    </style>
   </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+      <h3 class="text-2xl font-bold mb-4">Envíanos un mensaje:</h3>
+      <form id="form" class="max-w-md mx-auto bg-white p-6 rounded shadow">
+        <div class="mb-4">
+          <label for="from_name" class="block text-gray-700 font-bold mb-2"
+            >Nombre</label
+          >
+          <input
+            type="text"
+            name="from_name"
+            id="from_name"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="email_id" class="block text-gray-700 font-bold mb-2"
+            >Correo Electrónico</label
+          >
+          <input
+            type="text"
+            name="email_id"
+            id="email_id"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block text-gray-700 font-bold mb-2"
+            >Mensaje</label
+          >
+          <textarea
+            name="message"
+            id="message"
+            rows="4"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          ></textarea>
+        </div>
+        <div class="flex items-center justify-between">
+          <input
+            type="submit"
+            id="button"
+            value="Enviar Mensaje"
+            class="btn-whatsapp"
+          />
+        </div>
+      </form>
 
-  <body>
-    <div>
-  <p>Carnet: AB12345</p>
-  <p>Correo electrónico: ejemplo@estudiante.ues.edu.sv</p>
-  <div>
-    <a href="https://www.facebook.com/uesoficial" target="_blank">
-      <i class="fab fa-facebook"></i>
-    </a>
-    <a href="https://twitter.com/uesoficial" target="_blank">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a href="https://www.instagram.com/uesoficial/" target="_blank">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://api.whatsapp.com/send?phone=50312345678" target="_blank">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-  </div>
-</div>
-      <div>
-        <h3>Envíanos un mensaje:</h3>
-        <form id="form">
-          <div class="field">
-            <label for="from_name">Nombre</label>
-            <input type="text" name="from_name" id="from_name" />
+      <div class="mt-8">
+        <h3 class="text-2xl font-bold mb-4">Integrantes del Grupo</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-white p-4 rounded shadow">
+            <p class="text-gray-700 font-bold">Nombre Apellido</p>
+            <p class="text-gray-600">carnet@ues.edu.sv</p>
           </div>
-          <div class="field">
-            <label for="email_id">Correo electrónico</label>
-            <input type="text" name="email_id" id="email_id" />
+          <div class="bg-white p-4 rounded shadow">
+            <p class="text-gray-700 font-bold">Nombre Apellido</p>
+            <p class="text-gray-600">carnet@ues.edu.sv</p>
           </div>
-          <div class="field">
-            <label for="message">Mensaje</label>
-            <input type="text" name="message" id="message" />
+          <div class="bg-white p-4 rounded shadow">
+            <p class="text-gray-700 font-bold">Nombre Apellido</p>
+            <p class="text-gray-600">carnet@ues.edu.sv</p>
           </div>
+          <div class="bg-white p-4 rounded shadow">
+            <p class="text-gray-700 font-bold">Nombre Apellido</p>
+            <p class="text-gray-600">carnet@ues.edu.sv</p>
+          </div>
+        </div>
+      </div>
 
-          <input type="submit" id="button" value="Send Email" />
-        </form>
+      <div class="mt-8">
+        <h3 class="text-2xl font-bold mb-4">Redes Sociales UES</h3>
+        <div class="flex items-center space-x-4">
+          <a href="#" class="text-ues-blue hover:text-ues-blue-700">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="#" class="text-ues-blue hover:text-ues-blue-700">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="#" class="text-ues-blue hover:text-ues-blue-700">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="#" class="text-ues-blue hover:text-ues-blue-700">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <h3 class="text-2xl font-bold mb-4">WhatsApp</h3>
+        <a
+          href="https://wa.me/50378451234"
+          target="_blank"
+          class="btn-whatsapp"
+        >
+          <i class="fab fa-whatsapp mr-2"></i> Contáctanos
+        </a>
       </div>
     </div>
+
+    <script
+      src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
