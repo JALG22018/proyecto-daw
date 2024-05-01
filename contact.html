@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contáctanos</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
 
     <script type="text/javascript">
-        emailjs.init('wpXqdH21THOWaW59s')
+      emailjs.init("wpXqdH21THOWaW59s");
     </script>
 
     <script src="js/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="contenedor">
-        <h2>Contáctanos</h2>
-        <div>
-            <p> Nombre Carnet: XXXXXXX, E-mail: integrante1@example.com</p>
-            <p> Nombre Carnet: XXXXXXX, E-mail: integrante2@example.com</p>
-            <p> Nombre Carnet: XXXXXXX, E-mail: integrante3@example.com</p>
-            <p> Nombre Carnet: XXXXXXX, E-mail: integrante4@example.com</p>
-        </div>
-        <div>
-            <h2>Redes sociales UES:</h2>
+      <h2>Contáctanos</h2>
+      <div>
+        <p>Nombre Carnet: XXXXXXX, E-mail: integrante1@example.com</p>
+        <p>Nombre Carnet: XXXXXXX, E-mail: integrante2@example.com</p>
+        <p>Nombre Carnet: XXXXXXX, E-mail: integrante3@example.com</p>
+        <p>Nombre Carnet: XXXXXXX, E-mail: integrante4@example.com</p>
+      </div>
+      <div>
+        <h2>Redes sociales UES:</h2>
 
-            <a href="https://www.facebook.com/UESoficial.SV/" target="_blank"><img src="images/facebook-icon.png"
-                    alt="Facebook"></a>
-            <a href="https://twitter.com/UESoficial" target="_blank"><img src="images/x-icon.png" alt="Twitter/X"></a>
+        <a href="https://www.facebook.com/UESoficial.SV/" target="_blank"
+          ><img src="images/facebook-icon.png" alt="Facebook"
+        /></a>
+        <a href="https://twitter.com/UESoficial" target="_blank"
+          ><img src="images/x-icon.png" alt="Twitter/X"
+        /></a>
+      </div>
+      <div class="whatsapp">
+        <a
+          href="https://api.whatsapp.com/send?phone=123456789"
+          target="_blank"
+          class="btn-whatsapp"
+          >Contáctanos por WhatsApp</a
+        >
+      </div>
+      <div>
+        <h3>Envíanos un mensaje:</h3>
+        <form id="form">
+          <div class="field">
+            <label for="from_name">Nombre</label>
+            <input type="text" name="from_name" id="from_name" />
+          </div>
+          <div class="field">
+            <label for="email_id">Correo electrónico</label>
+            <input type="text" name="email_id" id="email_id" />
+          </div>
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <input type="text" name="message" id="message" />
+          </div>
 
-        </div>
-        <div class="whatsapp">
-            <a href="https://api.whatsapp.com/send?phone=123456789" target="_blank" class="btn-whatsapp">Contáctanos por
-                WhatsApp</a>
-        </div>
-        <div>
-            <h3>Envía un mensaje:</h3>
-            <form id="form">
-                <div class="field">
-                    <label for="from_name">Nombre</label>
-                    <input type="text" name="from_name" id="from_name">
-                </div>
-                <div class="field">
-                    <label for="email_id">Correo electrónico</label>
-                    <input type="text" name="email_id" id="email_id">
-                </div>
-                <div class="field">
-                    <label for="message">Mensaje</label>
-                    <input type="text" name="message" id="message">
-                </div>
-                <input type="submit" id="button" value="Enviar mensaje">
-            </form>
-        </div>
+          <input type="submit" id="button" value="Send Email" />
+        </form>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
