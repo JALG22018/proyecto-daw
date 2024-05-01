@@ -63,6 +63,13 @@ button:hover {
   justify-content: space-between; /* Para que los elementos estén separados */
 }
 
+.info {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 400px;
+}
+
 .info,
 .contact-form {
   flex: 1; /* Los elementos ocuparán el mismo espacio */
