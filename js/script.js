@@ -1,3 +1,4 @@
+// script.js
 var Tawk_API = Tawk_API || {},
   Tawk_LoadStart = new Date();
 (function () {
@@ -17,7 +18,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
   btn.value = "Enviando...";
 
-  const serviceID = "service_mr14mef";
+  const serviceID = "default_service";
   const templateID = "template_i0prtn8";
 
   emailjs.sendForm(serviceID, templateID, this).then(
