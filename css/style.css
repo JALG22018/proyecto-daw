@@ -58,16 +58,12 @@ button:hover {
   background: #45a049;
 }
 
-.container {
-  display: flex;
-  justify-content: flex-start; /* Para que los elementos estén separados */
-}
-
 .info {
   background: #fff;
   padding: 25px;
   border-radius: 10px;
   width: 200px;
+  margin-right: 20px;
 }
 
 .info-group {
