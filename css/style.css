@@ -4,7 +4,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* Añadido para centrar verticalmente en dispositivos más altos */
+  min-height: 100vh; /* Añadido para ocupar toda la altura de la ventana */
 }
+
+.contact-info {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 400px;
+  margin-bottom: 20px; /* Añadido para espacio entre la información de contacto y el formulario */
+}
+
 .contact-form {
   background: #fff;
   padding: 25px;
@@ -56,6 +67,14 @@ button {
 
 button:hover {
   background: #45a049;
+}
+
+/* Estilos para dispositivos de pantalla pequeña */
+@media screen and (max-width: 768px) {
+  .contact-info,
+  .contact-form {
+    width: 90%; /* Cambiar el ancho para dispositivos pequeños */
+  }
 }
 
 .contact-info {
