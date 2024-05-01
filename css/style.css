@@ -5,6 +5,42 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.contact-info,
+.social-links,
+.whatsapp-button {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.contact-info h2,
+.social-links h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.contact-info .member,
+.social-links .social-icon {
+  margin-bottom: 10px;
+}
+
+.social-links .social-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-button {
+  text-align: center;
+}
+
+.whatsapp-button img {
+  width: 50px;
+  height: 50px;
+}
+
 .contact-form {
   background: #fff;
   padding: 25px;
@@ -14,7 +50,7 @@ body {
 
 h1 {
   text-align: center;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 40px;
   color: #333;
 }
@@ -56,42 +92,4 @@ button {
 
 button:hover {
   background: #45a049;
-}
-
-/* Información del grupo */
-.group-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.group-info p {
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-/* Enlaces de redes sociales */
-.social-links {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.social-link {
-  display: inline-block;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-/* Botón de WhatsApp */
-.whatsapp-button {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 20px;
-  background-color: #25d366;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
 }
