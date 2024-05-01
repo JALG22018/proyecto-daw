@@ -58,22 +58,40 @@ button:hover {
   background: #45a049;
 }
 
-.info {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  width: 200px;
-  margin-right: 20px;
-}
-
-.info-group {
+/* Información del grupo */
+.group-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
-.social-links {
-  margin-top: 15px;
+.group-info p {
+  font-weight: bold;
+  margin-right: 10px;
 }
 
-.social-links a {
-  margin-right: 10px;
+/* Enlaces de redes sociales */
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
