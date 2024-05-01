@@ -58,11 +58,14 @@ button:hover {
   background: #45a049;
 }
 
-.info {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  width: 400px;
+.container {
+  display: flex;
+  justify-content: space-between; /* Para que los elementos estén separados */
+}
+
+.info,
+.contact-form {
+  flex: 1; /* Los elementos ocuparán el mismo espacio */
 }
 
 .info-group {
