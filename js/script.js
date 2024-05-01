@@ -11,16 +11,26 @@ var Tawk_API = Tawk_API || {},
   s0.parentNode.insertBefore(s1, s0);
 })();
 
-function SendMail() {
+function sendMessage() {
+  (function () {
+    emailjs.init("wpXqdH21THOWaW59s"); // Account Public Key
+  })();
+  var serviceID = "service_mr14mef"; // Email Service ID
+  var templateID = "template_i0prtn8"; // Email Template ID
+
   var params = {
-    from_name: document.getElementById("fullName").value,
-    email_id: document.getElementById("email_id").value,
-    message: document.getElementById("message").value,
+    sendername: document.querySelector("#name").value,
+    senderemail: document.querySelector("#email").value,
+    subject: document.querySelector("#subject").value,
+    message: document.querySelector("#message").value,
   };
 
   emailjs
-    .send("service_mr14mef", "template_i0prtn8", params)
-    .then(function (res) {
-      alert("Success! " + res.status);
-    });
+    .send(serviceID, templateID, params)
+    .then((res) => {
+      alert(
+        "Thank you, " + params["sendername"] + "! Your message has been sent."
+      );
+    })
+    .catch();
 }
