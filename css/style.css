@@ -69,14 +69,6 @@ button:hover {
   background: #45a049;
 }
 
-/* Estilos para dispositivos de pantalla pequeña */
-@media screen and (max-width: 768px) {
-  .contact-info,
-  .contact-form {
-    width: 90%; /* Cambiar el ancho para dispositivos pequeños */
-  }
-}
-
 .contact-info {
   margin-bottom: 30px;
 }
