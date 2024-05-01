@@ -70,11 +70,6 @@ button:hover {
   width: 400px;
 }
 
-.info,
-.contact-form {
-  flex: 1; /* Los elementos ocuparán el mismo espacio */
-}
-
 .info-group {
   margin-bottom: 20px;
 }
