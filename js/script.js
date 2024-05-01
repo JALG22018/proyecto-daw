@@ -16,15 +16,15 @@ const btn = document.getElementById("button");
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
 
-  btn.value = "Enviando...";
+  btn.value = "Sending...";
 
-  const serviceID = "service_mr14mef";
+  const serviceID = "default_service";
   const templateID = "template_i0prtn8";
 
   emailjs.sendForm(serviceID, templateID, this).then(
     () => {
       btn.value = "Send Email";
-      alert("¡Mensaje enviado!");
+      alert("Sent!");
     },
     (err) => {
       btn.value = "Send Email";
