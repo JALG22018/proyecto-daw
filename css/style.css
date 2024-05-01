@@ -58,17 +58,15 @@ button:hover {
   background: #45a049;
 }
 
-.group-info {
-  margin-top: 30px;
+.info {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 400px;
 }
 
-.group-info h2 {
-  font-size: 20px;
-  color: #333;
-}
-
-.member-info p {
-  margin: 5px 0;
+.info-group {
+  margin-bottom: 20px;
 }
 
 .social-links {
@@ -77,8 +75,4 @@ button:hover {
 
 .social-links a {
   margin-right: 10px;
-}
-
-.whatsapp-button {
-  margin-top: 20px;
 }
