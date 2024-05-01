@@ -60,14 +60,14 @@ button:hover {
 
 .container {
   display: flex;
-  justify-content: space-between; /* Para que los elementos estén separados */
+  justify-content: flex-start; /* Para que los elementos estén separados */
 }
 
 .info {
   background: #fff;
   padding: 25px;
   border-radius: 10px;
-  width: 400px;
+  width: 200px;
 }
 
 .info-group {
