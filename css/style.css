@@ -1,58 +1,33 @@
-/* body de contact.html */
 .contact-html {
   font-family: "Gentium Plus", serif;
   background: #d1c4e9;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
+  flex-direction: column; /* Añadido para centrar verticalmente en dispositivos más altos */
+  min-height: 100vh; /* Añadido para ocupar toda la altura de la ventana */
 }
 
-.section-title-contact {
+h1 {
   text-align: center;
-  color: #4d2b6e;
-  padding: 25px;
+  color: #333;
 }
 
 /* info */
 
 .contact-info {
-  background: #b68bff;
+  background: #fff;
   padding: 25px;
   border-radius: 10px;
   width: 400px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.grupo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.integrante {
-  margin: 10px;
-  padding: 10px;
-  border: 2px solid #7c3aed;
-  border-radius: 10px;
-  width: 150px;
-  text-align: center;
-  background: #7c3aed;
-}
-
-.carnet,
-.correo {
-  margin: 5px 0;
-  color: #f5edff;
+  margin-bottom: 20px; /* Añadido para espacio entre la información de contacto y el formulario */
 }
 
 .logo-container {
   display: inline-block;
   border-radius: 10px;
-  overflow: hidden;
-  margin-right: 10px;
+  overflow: hidden; /* Asegura que la imagen esté contenida dentro del borde redondeado */
+  margin-right: 10px; /* Espacio entre los logos */
 }
 
 .whatsapp {
@@ -62,26 +37,24 @@
 .whatsapp-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #4d2b6e;
-  color: #f5edff;
+  background-color: green;
+  color: white;
   text-decoration: none;
   font-size: 16px;
   border-radius: 5px;
 }
 
 .whatsapp-button:hover {
-  background-color: #7c3aed;
+  background-color: darkgreen;
 }
 
 /* formulario */
 
 .contact-form {
-  background: #f5edff;
+  background: #fff;
   padding: 25px;
   border-radius: 10px;
   width: 400px;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .form-group {
@@ -90,15 +63,16 @@
 
 label {
   display: block;
+  font-weight: bold;
   margin-bottom: 5px;
-  color: #4d2b6e;
+  color: #555;
 }
 
 input,
 textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #b68bff;
+  border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 17px;
   box-sizing: border-box;
@@ -108,8 +82,8 @@ textarea {
 button {
   display: block;
   margin: auto;
-  background: #4d2b6e;
-  color: #f5edff;
+  background: #4caf50;
+  color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -119,5 +93,5 @@ button {
 }
 
 button:hover {
-  background: #7c3aed;
+  background: #45a049;
 }
