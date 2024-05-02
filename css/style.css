@@ -8,6 +8,11 @@ body {
   min-height: 100vh; /* Añadido para ocupar toda la altura de la ventana */
 }
 
+h1 {
+  text-align: center;
+  color: #333;
+}
+
 /* info */
 
 .contact-info {
@@ -43,11 +48,6 @@ body {
   padding: 25px;
   border-radius: 10px;
   width: 400px;
-}
-
-h1 {
-  text-align: center;
-  color: #333;
 }
 
 .form-group {

@@ -29,7 +29,7 @@ function sendMessage() {
     .send(serviceID, templateID, params)
     .then((res) => {
       alert(
-        "Thank you, " + params["sendername"] + "! Your message has been sent."
+        "¡Gracias, " + params["sendername"] + "! Su mensaje ha sido enviado."
       );
     })
     .catch();
