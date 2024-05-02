@@ -1,33 +1,58 @@
+/* body de contact.html */
 .contact-html {
   font-family: "Gentium Plus", serif;
   background: #d1c4e9;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Añadido para centrar verticalmente en dispositivos más altos */
-  min-height: 100vh; /* Añadido para ocupar toda la altura de la ventana */
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-h1 {
+.section-title-contact {
   text-align: center;
-  color: #333;
+  color: #4d2b6e;
+  padding: 25px;
 }
 
 /* info */
 
 .contact-info {
-  background: #fff;
+  background: #b68bff;
   padding: 25px;
   border-radius: 10px;
   width: 400px;
-  margin-bottom: 20px; /* Añadido para espacio entre la información de contacto y el formulario */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.grupo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.integrante {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #7c3aed;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  background: #7c3aed;
+}
+
+.carnet,
+.correo {
+  margin: 5px 0;
+  color: #f5edff;
 }
 
 .logo-container {
   display: inline-block;
   border-radius: 10px;
-  overflow: hidden; /* Asegura que la imagen esté contenida dentro del borde redondeado */
-  margin-right: 10px; /* Espacio entre los logos */
+  overflow: hidden;
+  margin-right: 10px;
 }
 
 .whatsapp {
@@ -37,24 +62,27 @@ h1 {
 .whatsapp-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: green;
-  color: white;
+  background-color: #4d2b6e;
+  color: #f5edff;
   text-decoration: none;
   font-size: 16px;
   border-radius: 5px;
 }
 
 .whatsapp-button:hover {
-  background-color: darkgreen;
+  background-color: #7c3aed;
 }
 
 /* formulario */
 
 .contact-form {
-  background: #fff;
+  background: #f5edff;
   padding: 25px;
   border-radius: 10px;
   width: 400px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin: 0 auto;
 }
 
 .form-group {
@@ -63,16 +91,15 @@ h1 {
 
 label {
   display: block;
-  font-weight: bold;
   margin-bottom: 5px;
-  color: #555;
+  color: #4d2b6e;
 }
 
 input,
 textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #b68bff;
   border-radius: 5px;
   font-size: 17px;
   box-sizing: border-box;
@@ -82,8 +109,8 @@ textarea {
 button {
   display: block;
   margin: auto;
-  background: #4caf50;
-  color: #fff;
+  background: #4d2b6e;
+  color: #f5edff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -93,5 +120,40 @@ button {
 }
 
 button:hover {
-  background: #45a049;
+  background: #7c3aed;
+}
+
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 768px) {
+  .contact-info,
+  .contact-form {
+    width: 60%; /* Reducir el ancho en pantallas más pequeñas */
+  }
+
+  .integrante {
+    width: 30%; /* Reducir el ancho de los integrantes en pantallas más pequeñas */
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 480px) {
+  .contact-info,
+  .contact-form {
+    width: 80%; /* Reducir el ancho aún más en pantallas pequeñas */
+  }
+
+  .integrante {
+    width: 100%; /* Hacer que los integrantes ocupen todo el ancho en pantallas pequeñas */
+  }
+
+  /* Ajustes para los iconos de redes sociales en pantallas pequeñas */
+  .logo-container {
+    margin-right: 5px;
+  }
+
+  /* Ajustes para el botón de WhatsApp en pantallas pequeñas */
+  .whatsapp-button {
+    font-size: 14px; /* Reducir el tamaño del texto */
+    padding: 8px 16px; /* Reducir el padding */
+  }
 }
