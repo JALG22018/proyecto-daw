@@ -13,6 +13,7 @@ body {
   padding: 25px;
   border-radius: 10px;
   width: 400px;
+  margin-bottom: 20px; /* Añadido para espacio entre la información de contacto y el formulario */
 }
 
 .contact-form {
