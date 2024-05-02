@@ -18,22 +18,26 @@
   <body>
     <div class="contact-info">
       <h1>Integrantes</h1>
-      <div class="group-members">
+      <div>
         <p>Carnet: TM22012, Correo electrónico: tm22012@ues.edu.sv</p>
         <p>Carnet: LG22018, Correo electrónico: lg22018@ues.edu.sv</p>
         <p>Carnet: JQ22003, Correo electrónico: jq22003@ues.edu.sv</p>
         <p>Carnet: MA22054, Correo electrónico: ma22054@ues.edu.sv</p>
       </div>
       <h1>Redes Sociales UES</h1>
-      <a href="https://www.facebook.com/UESoficial.SV/">
-        <img src="images/facebook-icon.png" alt="Facebook"
-      /></a>
-      <a href="https://twitter.com/UESoficial">
-        <img src="images/x-icon.png" alt="Twitter"
-      /></a>
-      <a href="https://api.whatsapp.com/send?phone=123456789">
-        <button class="whatsapp-btn">Contactar por WhatsApp</button>
-      </a>
+      <div class="social-media">
+        <a href="https://www.facebook.com/UESoficial.SV/">
+          <img src="images/facebook-icon.png" alt="Facebook"
+        /></a>
+        <a href="https://twitter.com/UESoficial">
+          <img src="images/x-icon.png" alt="Twitter"
+        /></a>
+      </div>
+      <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=123456789">
+          <button class="whatsapp-btn">Contactar por WhatsApp</button>
+        </a>
+      </div>
     </div>
 
     <div>
@@ -41,19 +45,30 @@
         <h1>Formulario de Contácto</h1>
         <div class="form-group">
           <label for="name">Nombre</label>
-          <input type="text" id="name" placeholder="e.g. David" />
+          <input type="text" id="name" placeholder="Ejemplo: Juan Pérez" />
         </div>
         <div class="form-group">
           <label for="email">E-mail</label>
-          <input type="email" id="email" placeholder="e.g. david@gmail.com" />
+          <input
+            type="email"
+            id="email"
+            placeholder="Ejemplo: ejemplo@correo.com"
+          />
         </div>
         <div class="form-group">
           <label for="subject">Asunto</label>
-          <input type="text" id="subject" placeholder="Subject" />
+          <input
+            type="text"
+            id="subject"
+            placeholder="Ejemplo: Consulta sobre productos"
+          />
         </div>
         <div class="form-group">
           <label for="message">Mensaje</label>
-          <textarea id="message" placeholder="Message"></textarea>
+          <textarea
+            id="message"
+            placeholder="Escribe su mensaje aquí..."
+          ></textarea>
         </div>
         <div class="form-group">
           <button onclick="sendMessage();">Enviar</button>
