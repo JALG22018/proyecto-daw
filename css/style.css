@@ -1,119 +1,48 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #4a55a2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* Estilos CSS para el documento HTML */
 
 .info {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  width: 400px;
-  margin-bottom: 20px; /* Añadido para espacio entre la información de contacto y el formulario */
+  margin: 20px;
 }
 
 .contact-form {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  width: 400px;
-}
-
-h1 {
-  text-align: center;
-  color: #333;
+  margin: 20px;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #555;
-}
-
-input,
+input[type="text"],
+input[type="email"],
 textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 17px;
+  border-radius: 4px;
   box-sizing: border-box;
-  resize: vertical;
 }
 
 button {
-  display: block;
-  margin: auto;
-  background: #4caf50;
-  color: #fff;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 17px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #45a049;
+  background-color: #45a049;
 }
 
-/* Estilos para dispositivos de pantalla pequeña */
-@media screen and (max-width: 768px) {
-  .contact-info,
-  .contact-form {
-    width: 90%; /* Cambiar el ancho para dispositivos pequeños */
+@media screen and (max-width: 600px) {
+  .info {
+    text-align: center;
   }
-}
-
-.contact-info {
-  margin-bottom: 30px;
-}
-
-.contact-info h2 {
-  margin-bottom: 10px;
-}
-
-.member-info p {
-  margin-bottom: 5px;
-}
-
-.social-media h3 {
-  margin-bottom: 10px;
-}
-
-.social-media ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.social-media ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.whatsapp {
-  margin-top: 20px;
-}
-
-.whatsapp-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: green;
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 5px;
-}
-
-.whatsapp-btn:hover {
-  background-color: darkgreen;
+  .social-media {
+    margin-bottom: 20px;
+  }
+  .whatsapp {
+    text-align: center;
+  }
 }
