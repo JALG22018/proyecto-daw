@@ -157,3 +157,30 @@ button:hover {
     padding: 8px 16px; /* Reducir el padding */
   }
 }
+
+/* Estilos para el menú de navegación */
+.navbar {
+  background-color: #333; /* Color de fondo del menú */
+  padding: 10px 0; /* Espaciado interno del menú */
+}
+
+.navbar ul {
+  list-style-type: none; /* Quitar los puntos de lista */
+  margin: 0; /* Eliminar el margen predeterminado */
+  padding: 0; /* Eliminar el relleno predeterminado */
+  text-align: center; /* Centrar los elementos de la lista */
+}
+
+.navbar ul li {
+  display: inline; /* Mostrar los elementos de la lista en línea */
+}
+
+.navbar ul li a {
+  color: #fff; /* Color del texto del enlace */
+  text-decoration: none; /* Quitar el subrayado predeterminado */
+  padding: 10px 20px; /* Espaciado interno del enlace */
+}
+
+.navbar ul li a:hover {
+  background-color: #555; /* Cambiar el color de fondo del enlace al pasar el cursor */
+}
