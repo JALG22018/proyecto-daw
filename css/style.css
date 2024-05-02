@@ -18,29 +18,6 @@ body {
   margin-bottom: 20px; /* Añadido para espacio entre la información de contacto y el formulario */
 }
 
-.contact-info h2 {
-  margin-bottom: 10px;
-}
-
-.member-info p {
-  margin-bottom: 5px;
-}
-
-.social-media h3 {
-  margin-bottom: 10px;
-}
-
-.social-media ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.social-media ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
 .whatsapp {
   margin-top: 20px;
 }
