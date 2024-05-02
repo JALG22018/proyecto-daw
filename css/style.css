@@ -81,18 +81,6 @@ button:hover {
   margin-bottom: 30px;
 }
 
-.contact-info h2 {
-  margin-bottom: 10px;
-}
-
-.member-info p {
-  margin-bottom: 5px;
-}
-
-.social-media h3 {
-  margin-bottom: 10px;
-}
-
 .social-media ul {
   list-style-type: none;
   padding: 0;
@@ -108,7 +96,7 @@ button:hover {
   margin-top: 20px;
 }
 
-.whatsapp-button {
+.whatsapp-btn {
   display: inline-block;
   padding: 10px 20px;
   background-color: green;
@@ -118,6 +106,6 @@ button:hover {
   border-radius: 5px;
 }
 
-.whatsapp-button:hover {
+.whatsapp-btn:hover {
   background-color: darkgreen;
 }
