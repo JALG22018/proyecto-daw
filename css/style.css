@@ -23,6 +23,13 @@ h1 {
   margin-bottom: 20px; /* Añadido para espacio entre la información de contacto y el formulario */
 }
 
+.logo-container {
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden; /* Asegura que la imagen esté contenida dentro del borde redondeado */
+  margin-right: 10px; /* Espacio entre los logos */
+}
+
 .whatsapp {
   margin-top: 20px;
 }
