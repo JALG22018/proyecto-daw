@@ -16,22 +16,54 @@
     </script>
   </head>
   <body class="contact-html">
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <img class="logoi" src="assets/logo.png" alt="noimage" />
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a onclick="toggleMenu()" href="#inicio">Inicio</a></li>
+          <li>
+            <a onclick="toggleMenu()" href="#Quienes_somos">Quienes somos</a>
+          </li>
+          <li>
+            <a onclick="toggleMenu()" href="#Nuestros_clientes"
+              >Nuestros clientes</a
+            >
+          </li>
+          <li><a onclick="toggleMenu()" href="Equipo">Equipo</a></li>
+          <li><a onclick="toggleMenu()" href="contact.html">Contactanos</a></li>
+        </div>
+      </div>
+    </nav>
+
     <div class="contact-info">
-      <h1>Integrantes</h1>
-      <div>
-        <ul>
-          <li><b>Carnet:</b> TM22012</li>
-          <p><b>Correo electrónico:</b> tm22012@ues.edu.sv</p>
-          <li><b>Carnet:</b> LG22018</li>
-          <p><b>Correo electrónico:</b> lg22018@ues.edu.sv</p>
-          <li><b>Carnet:</b> JQ22003</li>
-          <p><b>Correo electrónico:</b> jq22003@ues.edu.sv</p>
-          <li><b>Carnet:</b> MA22054</li>
-          <p><b>Correo electrónico:</b> ma22054@ues.edu.sv</p>
-        </ul>
+      <h1 class="section-title-contact">Integrantes</h1>
+      <div class="grupo">
+        <div class="integrante">
+          <p class="carnet">Carnet: TM22012</p>
+          <p class="correo">Correo electrónico: tm22012@ues.edu.sv</p>
+        </div>
+        <div class="integrante">
+          <p class="carnet">Carnet: LG22018</p>
+          <p class="correo">Correo electrónico: lg22018@ues.edu.sv</p>
+        </div>
+        <div class="integrante">
+          <p class="carnet">Carnet: JQ22003</p>
+          <p class="correo">Correo electrónico: jq22003@ues.edu.sv</p>
+        </div>
+        <div class="integrante">
+          <p class="carnet">Carnet: MA22054</p>
+          <p class="correo">Correo electrónico: ma22054@ues.edu.sv</p>
+        </div>
       </div>
 
-      <h1>Redes Sociales UES</h1>
+      <h1 class="section-title-contact">Redes Sociales UES</h1>
       <div>
         <a
           href="https://www.facebook.com/UESoficial.SV/"
@@ -50,10 +82,7 @@
       </div>
 
       <div class="whatsapp">
-        <a
-          href="https://api.whatsapp.com/send/?phone=50370384774"
-          target="_blank"
-        >
+        <a href="https://api.whatsapp.com/send?phone=123456789" target="_blank">
           <button class="whatsapp-button">WhatsApp</button>
         </a>
       </div>
@@ -61,7 +90,7 @@
 
     <div>
       <div class="contact-form">
-        <h1>Formulario de Contacto</h1>
+        <h1 class="section-title-contact">Formulario de Contacto</h1>
         <div class="form-group">
           <label for="name">Nombre</label>
           <input type="text" id="name" placeholder="Ejemplo: Juan Pérez" />
@@ -94,5 +123,9 @@
         </div>
       </div>
     </div>
+
+    <footer>
+      <p>ues.</p>
+    </footer>
   </body>
 </html>
