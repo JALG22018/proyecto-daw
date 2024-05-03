@@ -9,10 +9,22 @@
   min-height: 100vh;
 }
 
+.section-title-form {
+  background: #f5edff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin: 0 auto;
+  display: inline-block;
+  max-width: calc(100% - 50px);
+}
+
 .section-title-contact {
   text-align: center;
   color: #4d2b6e;
   padding: 25px;
+  font-size: 2em;
 }
 
 /* info */
@@ -59,20 +71,6 @@
   margin-top: 20px;
 }
 
-.whatsapp-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4d2b6e;
-  color: #f5edff;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 5px;
-}
-
-.whatsapp-button:hover {
-  background-color: #7c3aed;
-}
-
 /* formulario */
 
 .contact-form {
@@ -106,81 +104,28 @@ textarea {
   resize: vertical;
 }
 
-button {
-  display: block;
-  margin: auto;
-  background: #4d2b6e;
-  color: #f5edff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 17px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-}
-
-button:hover {
-  background: #7c3aed;
-}
-
-/* Estilos para pantallas grandes */
 @media only screen and (min-width: 768px) {
   .contact-info,
   .contact-form {
-    width: 60%; /* Reducir el ancho en pantallas más pequeñas */
+    width: 60%;
   }
 
   .integrante {
-    width: 30%; /* Reducir el ancho de los integrantes en pantallas más pequeñas */
+    width: 30%;
   }
 }
 
-/* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 480px) {
   .contact-info,
   .contact-form {
-    width: 80%; /* Reducir el ancho aún más en pantallas pequeñas */
+    width: 80%;
   }
 
   .integrante {
-    width: 100%; /* Hacer que los integrantes ocupen todo el ancho en pantallas pequeñas */
+    width: 100%;
   }
 
-  /* Ajustes para los iconos de redes sociales en pantallas pequeñas */
   .logo-container {
     margin-right: 5px;
   }
-
-  /* Ajustes para el botón de WhatsApp en pantallas pequeñas */
-  .whatsapp-button {
-    font-size: 14px; /* Reducir el tamaño del texto */
-    padding: 8px 16px; /* Reducir el padding */
-  }
-}
-
-/* Estilos para el menú de navegación */
-.navbar {
-  background-color: #333; /* Color de fondo del menú */
-  padding: 10px 0; /* Espaciado interno del menú */
-}
-
-.navbar ul {
-  list-style-type: none; /* Quitar los puntos de lista */
-  margin: 0; /* Eliminar el margen predeterminado */
-  padding: 0; /* Eliminar el relleno predeterminado */
-  text-align: center; /* Centrar los elementos de la lista */
-}
-
-.navbar ul li {
-  display: inline; /* Mostrar los elementos de la lista en línea */
-}
-
-.navbar ul li a {
-  color: #fff; /* Color del texto del enlace */
-  text-decoration: none; /* Quitar el subrayado predeterminado */
-  padding: 10px 20px; /* Espaciado interno del enlace */
-}
-
-.navbar ul li a:hover {
-  background-color: #555; /* Cambiar el color de fondo del enlace al pasar el cursor */
 }
