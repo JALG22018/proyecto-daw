@@ -113,7 +113,6 @@ textarea {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 1000; /* Asegura que el footer esté sobre cualquier otro contenido */
 }
 
 .company-info {
