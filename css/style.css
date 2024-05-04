@@ -104,6 +104,23 @@ textarea {
   resize: vertical;
 }
 
+/* Footer */
+.footer {
+  background-color: #7c3aed; /* Color morado */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que el footer esté sobre cualquier otro contenido */
+}
+
+.company-info {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 768px) {
   .contact-info,
   .contact-form {
