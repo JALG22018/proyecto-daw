@@ -76,41 +76,41 @@
         </div>
       </div>
     </div>
-    <div class="section-title-form px-4">
-      <div class="contact-form bg-white p-4 shadow-md rounded-md">
-        <h1 class="section-title-contact">Formulario de Contacto</h1>
-        <div class="form-group mb-4">
-          <label for="name">Nombre</label>
+    <div class="bg-purple-200 p-4 rounded-lg mt-6 mx-4">
+      <h2 class="text-xl font-bold mb-4">Formulario de Contacto</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label for="name" class="block font-bold">Nombre</label>
           <input
             type="text"
             id="name"
-            class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            class="w-full border-purple-400 border-2 rounded-md px-3 py-2 focus:outline-none focus:border-purple-600"
           />
         </div>
-        <div class="form-group mb-4">
-          <label for="email">E-mail</label>
+        <div>
+          <label for="email" class="block font-bold">E-mail</label>
           <input
             type="email"
             id="email"
-            class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            class="w-full border-purple-400 border-2 rounded-md px-3 py-2 focus:outline-none focus:border-purple-600"
           />
         </div>
-        <div class="form-group mb-4">
-          <label for="subject">Asunto</label>
+        <div class="col-span-2">
+          <label for="subject" class="block font-bold">Asunto</label>
           <input
             type="text"
             id="subject"
-            class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            class="w-full border-purple-400 border-2 rounded-md px-3 py-2 focus:outline-none focus:border-purple-600"
           />
         </div>
-        <div class="form-group mb-4">
-          <label for="message">Mensaje</label>
+        <div class="col-span-2">
+          <label for="message" class="block font-bold">Mensaje</label>
           <textarea
             id="message"
-            class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            class="w-full border-purple-400 border-2 rounded-md px-3 py-2 focus:outline-none focus:border-purple-600"
           ></textarea>
         </div>
-        <div class="form-group mb-4 flex justify-center">
+        <div class="col-span-2">
           <button
             onclick="sendMessage();"
             class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
