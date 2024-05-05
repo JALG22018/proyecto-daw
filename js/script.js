@@ -12,6 +12,17 @@ var Tawk_API = Tawk_API || {},
 })();
 
 function sendMessage() {
+  var name = document.querySelector("#name").value;
+  var email = document.querySelector("#email").value;
+  var subject = document.querySelector("#subject").value;
+  var message = document.querySelector("#message").value;
+
+  // Verificar si algún campo está vacío
+  if (!name || !email || !subject || !message) {
+    alert("Por favor complete todos los campos.");
+    return;
+  }
+
   (function () {
     emailjs.init("wpXqdH21THOWaW59s"); // Account Public Key
   })();
@@ -19,18 +30,16 @@ function sendMessage() {
   var templateID = "template_i0prtn8"; // Email Template ID
 
   var params = {
-    sendername: document.querySelector("#name").value,
-    senderemail: document.querySelector("#email").value,
-    subject: document.querySelector("#subject").value,
-    message: document.querySelector("#message").value,
+    sendername: name,
+    senderemail: email,
+    subject: subject,
+    message: message,
   };
 
   emailjs
     .send(serviceID, templateID, params)
     .then((res) => {
-      alert(
-        "¡Gracias, " + params["sendername"] + "! Su mensaje ha sido enviado."
-      );
+      alert("¡Gracias, " + name + "! Su mensaje ha sido enviado.");
     })
     .catch();
 }
