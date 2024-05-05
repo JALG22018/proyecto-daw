@@ -5,19 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contáctanos</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        font-family: "Gentium Basic", serif;
-      }
-    </style>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
       emailjs.init("wpXqdH21THOWaW59s");
@@ -26,12 +15,12 @@
 
   <body class="bg-purple-50">
     <div class="py-6 text-center">
-      <h1 class="text-4xl font-bold">CONTÁCTANOS</h1>
+      <h1 class="titulo-pagina-html-de-contacto">CONTÁCTANOS</h1>
     </div>
     <div class="container mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-purple-100 rounded-lg p-6">
-          <h1 class="font-bold text-purple-800">Integrantes</h1>
+        <div class="bg-purple-100 rounded p-6">
+          <h1 class="titulos-html-de-contacto">Integrantes</h1>
           <div class="grid grid-cols-2 gap-4 mt-4">
             <div class="integrante bg-purple-300 p-4 rounded">
               <p class="font-bold text-purple-800">Carnet: TM22012</p>
@@ -59,8 +48,8 @@
             </div>
           </div>
         </div>
-        <div class="bg-purple-100 rounded-lg p-6">
-          <h1 class="font-bold text-purple-800">Redes Sociales UES</h1>
+        <div class="bg-purple-100 rounded p-6">
+          <h1 class="titulos-html-de-contacto">Redes Sociales UES</h1>
           <div class="flex justify-center items-center mt-4 space-x-4">
             <a href="https://www.facebook.com/UESoficial.SV/" target="_blank">
               <img src="images/facebook-icon.png" alt="Facebook" />
@@ -85,14 +74,14 @@
           </div>
         </div>
       </div>
-      <div class="bg-purple-100 rounded-lg p-6 mt-8">
-        <h1 class="font-bold text-purple-800">Formulario de Contacto</h1>
+      <div class="bg-purple-100 rounded p-6 mt-8">
+        <h1 class="titulos-html-de-contacto">Formulario de Contacto</h1>
         <div class="mt-4">
           <label for="name" class="block text-purple-800">Nombre</label>
           <input
             type="text"
             id="name"
-            class="w-full px-4 py-2 rounded border border-purple-300 focus:outline-none focus:border-purple-500"
+            class="w-full px-4 py-2 rounded border border-purple-300"
           />
         </div>
         <div class="mt-4">
@@ -100,7 +89,7 @@
           <input
             type="email"
             id="email"
-            class="w-full px-4 py-2 rounded border border-purple-300 focus:outline-none focus:border-purple-500"
+            class="w-full px-4 py-2 rounded border border-purple-300"
           />
         </div>
         <div class="mt-4">
@@ -108,14 +97,14 @@
           <input
             type="text"
             id="subject"
-            class="w-full px-4 py-2 rounded border border-purple-300 focus:outline-none focus:border-purple-500"
+            class="w-full px-4 py-2 rounded border border-purple-300"
           />
         </div>
         <div class="mt-4">
           <label for="message" class="block text-purple-800">Mensaje</label>
           <textarea
             id="message"
-            class="w-full px-4 py-2 rounded border border-purple-300 focus:outline-none focus:border-purple-500"
+            class="w-full px-4 py-2 rounded border border-purple-300"
           ></textarea>
         </div>
         <div class="mt-4">
