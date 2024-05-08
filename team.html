@@ -4,66 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Equipo</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-QqRTS4zL+5x3qFm0fZRLlY7xHf9t34QotMqyG9Y5o2Jv8YYZzQ9LPBvYIrCwCSYvj3CtfAUGlfnB5DRUV9p8Pw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="bg-purple-100">
-    <div class="py-6 text-center">
-      <h1 class="titulo-pagina-html-de-contacto">EQUIPO</h1>
+    <div class="py-10 text-center">
+      <h1 class="text-4xl font-bold text-purple-800">
+        ¡Conozca a Nuestro Increíble Equipo!
+      </h1>
+      <p class="mt-3 text-lg text-gray-700">
+        Equipo comprometido con la calidad y el profesionalismo, trabajando
+        juntos para alcanzar los objetivos.
+      </p>
     </div>
-    <div class="container mx-auto pt-5">
-      <div class="col-lg-4 mb-5">
-        <div class="bg-primary text-white text-uppercase font-bold px-1">
-          Conozca al Equipo
+    <div
+      class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+    >
+      <div class="bg-white rounded-lg shadow-lg">
+        <img
+          class="w-full h-auto rounded-t-lg"
+          src="images/team-1.jpg"
+          alt="John Doe"
+        />
+        <div class="p-6">
+          <h5 class="font-bold text-xl text-purple-800">John Doe</h5>
+          <p class="text-sm text-gray-500">CEO, Founder</p>
         </div>
-        <h1 class="mt-2 mb-3 text-3xl font-bold">
-          Conozca a los Expertos detrás del Trabajo 💫
-        </h1>
-        <h4 class="text-gray-600 mb-4">
-          Equipo comprometido con la calidad y el profesionalismo, trabajando
-          juntos para alcanzar los objetivos.
-        </h4>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div class="bg-white rounded-lg shadow-lg">
-          <div class="relative">
-            <img class="w-full h-auto" src="images/team-1.jpg" alt="" />
-          </div>
-          <div class="p-6">
-            <h5 class="font-bold">John Doe</h5>
-            <p class="text-sm text-gray-500">CEO, Founder</p>
-          </div>
+      <div class="bg-white rounded-lg shadow-lg">
+        <img
+          class="w-full h-auto rounded-t-lg"
+          src="images/team-2.jpg"
+          alt="Kate Wilson"
+        />
+        <div class="p-6">
+          <h5 class="font-bold text-xl text-purple-800">Kate Wilson</h5>
+          <p class="text-sm text-gray-500">Designer</p>
         </div>
-
-        <div class="bg-white rounded-lg shadow-lg">
-          <div class="relative">
-            <img class="w-full h-auto" src="images/team-2.jpg" alt="" />
-          </div>
-          <div class="p-6">
-            <h5 class="font-bold">Kate Wilson</h5>
-            <p class="text-sm text-gray-500">Designer</p>
-          </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg">
+        <img
+          class="w-full h-auto rounded-t-lg"
+          src="images/team-3.jpg"
+          alt="John Brown"
+        />
+        <div class="p-6">
+          <h5 class="font-bold text-xl text-purple-800">John Brown</h5>
+          <p class="text-sm text-gray-500">Developer</p>
         </div>
-
-        <div class="bg-white rounded-lg shadow-lg">
-          <div class="relative">
-            <img class="w-full h-auto" src="images/team-3.jpg" alt="" />
-          </div>
-          <div class="p-6">
-            <h5 class="font-bold">John Brown</h5>
-            <p class="text-sm text-gray-500">Developer</p>
-          </div>
-        </div>
-
-        <div class="bg-white rounded-lg shadow-lg">
-          <div class="relative">
-            <img class="w-full h-auto" src="images/team-4.jpg" alt="" />
-          </div>
-          <div class="p-6">
-            <h5 class="font-bold">Paul Watson</h5>
-            <p class="text-sm text-gray-500">Marketer</p>
-          </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg">
+        <img
+          class="w-full h-auto rounded-t-lg"
+          src="images/team-4.jpg"
+          alt="Paul Watson"
+        />
+        <div class="p-6">
+          <h5 class="font-bold text-xl text-purple-800">Paul Watson</h5>
+          <p class="text-sm text-gray-500">Marketer</p>
         </div>
       </div>
     </div>
