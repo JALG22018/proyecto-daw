@@ -73,8 +73,10 @@
 }
 
 .data-container {
-  background: #ffebee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #8a2be2;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
 }
