@@ -28,33 +28,29 @@
   text-align: center;
 }
 
-/* Estilo para el texto a animar */
-.typing-animation {
-  overflow: hidden; /* Para que el texto no se muestre completamente al principio */
-  border-right: 0.15em solid orange; /* Cursor intermitente */
-  white-space: nowrap; /* Para que el texto no se divida */
-  margin: 0 auto; /* Alinear al centro */
-  letter-spacing: 0.15em; /* Espacio entre letras */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+.efecto-animacion {
+  border-right: 10px solid black;
+  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 2s steps(77) 2s forwards, blink 0.9s infinite;
 }
 
-/* Animación de escribir */
-@keyframes typing {
-  from {
-    width: 0;
-  }
+@keyframes typewriter {
   to {
-    width: 100%;
+    width: 15px;
   }
 }
 
-/* Animación de cursor intermitente */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
+@keyframes blink {
+  0% {
+    border-right-color: transparent;
   }
   50% {
-    border-color: orange;
+    border-right-color: black;
+  }
+  100% {
+    border-right-color: transparent;
   }
 }
