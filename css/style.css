@@ -32,7 +32,7 @@
   cursor: pointer;
   position: relative;
   padding: 8px 16px; /* Tamaño más pequeño */
-  background: white;
+  background: rgb(228, 153, 255);
   font-size: 20px; /* Tamaño más pequeño */
   border-top-right-radius: 8px; /* Tamaño más pequeño */
   border-bottom-left-radius: 8px; /* Tamaño más pequeño */
