@@ -22,7 +22,8 @@
 
 .titulos-html-de-equipo {
   font-weight: bold;
-  color: black;
+  color: purple;
   font-size: 2.25rem;
   font-family: "Dancing Script", cursive;
+  text-align: center;
 }
