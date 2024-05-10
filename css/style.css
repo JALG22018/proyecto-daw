@@ -28,25 +28,6 @@
   text-align: center;
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Añadido para centrar verticalmente */
-}
-
-.box {
-  color: black;
-  font-family: sans-serif;
-  font-size: 25px;
-  margin-top: 100px;
-  width: 38ch;
-  animation: typing 3s steps(34), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-}
-
 .typing-animation {
   overflow: hidden;
   border-right: 2px solid black;
