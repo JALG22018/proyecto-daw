@@ -30,8 +30,7 @@
 
 .btn {
   position: relative;
-  padding: 8px 32px; /* Ajusta el padding para hacer el botón más ancho */
-  max-width: 300px; /* Ajusta el ancho máximo del botón según sea necesario */
+  padding: 8px 16px;
   background: white;
   font-size: 20px;
   border-top-right-radius: 8px;
