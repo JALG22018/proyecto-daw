@@ -29,15 +29,16 @@
 }
 
 .btn {
-  cursor: pointer;
   position: relative;
-  padding: 8px 16px; /* Tamaño más pequeño */
+  padding: 12px 20px; /* Aumento del tamaño */
   background: white;
-  font-size: 20px; /* Tamaño más pequeño */
-  border-top-right-radius: 8px; /* Tamaño más pequeño */
-  border-bottom-left-radius: 8px; /* Tamaño más pequeño */
+  font-size: 24px; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Fuente en negrita */
+  border-top-right-radius: 12px; /* Aumento del tamaño */
+  border-bottom-left-radius: 12px; /* Aumento del tamaño */
   transition: all 1s;
 }
+
 .btn:after,
 .btn:before {
   content: " ";
