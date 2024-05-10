@@ -58,3 +58,10 @@
     border-color: transparent;
   }
 }
+
+.typing-animation {
+  overflow: hidden;
+  border-right: 2px solid black;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+}
