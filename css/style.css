@@ -28,21 +28,33 @@
   text-align: center;
 }
 
+/* Estilo para el texto a animar */
 .typing-animation {
-  overflow: hidden;
-  border-right: 2px solid black;
-  white-space: nowrap;
-  animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+  overflow: hidden; /* Para que el texto no se muestre completamente al principio */
+  border-right: 0.15em solid orange; /* Cursor intermitente */
+  white-space: nowrap; /* Para que el texto no se divida */
+  margin: 0 auto; /* Alinear al centro */
+  letter-spacing: 0.15em; /* Espacio entre letras */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
+/* Animación de escribir */
 @keyframes typing {
   from {
     width: 0;
   }
+  to {
+    width: 100%;
+  }
 }
 
-@keyframes blink {
-  50% {
+/* Animación de cursor intermitente */
+@keyframes blink-caret {
+  from,
+  to {
     border-color: transparent;
+  }
+  50% {
+    border-color: orange;
   }
 }
