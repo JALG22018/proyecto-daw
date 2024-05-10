@@ -27,30 +27,3 @@
   font-family: "Gentium Plus", serif;
   text-align: center;
 }
-
-.efecto-animacion {
-  padding-right: 10px;
-  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
-  width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 2s steps(77) 2s forwards, blink 0.9s infinite;
-}
-
-@keyframes typewriter {
-  to {
-    width: 77ch;
-  }
-}
-
-@keyframes blink {
-  0% {
-    border-right-color: transparent;
-  }
-  50% {
-    border-right-color: #eee;
-  }
-  100% {
-    border-right-color: transparent;
-  }
-}
