@@ -29,8 +29,9 @@
 }
 
 .efecto-animacion {
-  border-right: 10px solid black;
+  border-right: 10px solid #eee; /* cursor-color */
   text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+
   width: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -39,7 +40,7 @@
 
 @keyframes typewriter {
   to {
-    width: 15px;
+    width: 77ch; /* characters */
   }
 }
 
@@ -48,7 +49,7 @@
     border-right-color: transparent;
   }
   50% {
-    border-right-color: black;
+    border-right-color: #eee; /* cursor-color */
   }
   100% {
     border-right-color: transparent;
