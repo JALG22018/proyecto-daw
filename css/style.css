@@ -29,20 +29,20 @@
 }
 
 .btn {
+  cursor: pointer;
   position: relative;
-  padding: 8px 16px;
+  padding: 8px 16px; /* Tamaño más pequeño */
   background: white;
-  font-size: 20px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
+  font-size: 20px; /* Tamaño más pequeño */
+  border-top-right-radius: 8px; /* Tamaño más pequeño */
+  border-bottom-left-radius: 8px; /* Tamaño más pequeño */
   transition: all 1s;
 }
-
 .btn:after,
 .btn:before {
   content: " ";
-  width: 8px;
-  height: 8px;
+  width: 8px; /* Tamaño más pequeño */
+  height: 8px; /* Tamaño más pequeño */
   position: absolute;
   border: 0px solid #fff;
   transition: all 1s;
@@ -50,14 +50,14 @@
 .btn:after {
   top: -1px;
   left: -1px;
-  border-top: 4px solid black;
-  border-left: 4px solid black;
+  border-top: 4px solid black; /* Tamaño más pequeño */
+  border-left: 4px solid black; /* Tamaño más pequeño */
 }
 .btn:before {
   bottom: -1px;
   right: -1px;
-  border-bottom: 4px solid black;
-  border-right: 4px solid black;
+  border-bottom: 4px solid black; /* Tamaño más pequeño */
+  border-right: 4px solid black; /* Tamaño más pequeño */
 }
 .btn:hover {
   border-top-right-radius: 0px;
