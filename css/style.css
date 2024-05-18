@@ -29,8 +29,8 @@
 .box-animation:after,
 .box-animation:before {
   content: " ";
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
   position: absolute;
   border: 0px solid #fff;
   transition: all 1s;
