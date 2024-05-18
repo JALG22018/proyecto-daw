@@ -29,21 +29,21 @@
 .box-animation:after,
 .box-animation:before {
   content: " ";
-  width: 8px;
-  height: 8px;
+  width: 16px;
+  height: 16px;
   position: absolute;
   border: 0px solid #fff;
   transition: all 1s;
 }
 .box-animation:after {
-  top: -2px;
-  left: -2px;
+  top: -1px;
+  left: -1px;
   border-top: 4px solid black;
   border-left: 4px solid black;
 }
 .box-animation:before {
-  bottom: -2px;
-  right: -2px;
+  bottom: -1px;
+  right: -1px;
   border-bottom: 4px solid black;
   border-right: 4px solid black;
 }
