@@ -36,14 +36,14 @@
   transition: all 1s;
 }
 .box-animation:after {
-  top: -1px;
-  left: -1px;
-  border-top: 8px solid black;
-  border-left: 8px solid black;
+  top: -2px;
+  left: -2px;
+  border-top: 4px solid black;
+  border-left: 4px solid black;
 }
 .box-animation:before {
-  bottom: -1px;
-  right: -1px;
+  bottom: -2px;
+  right: -2px;
   border-bottom: 4px solid black;
   border-right: 4px solid black;
 }
