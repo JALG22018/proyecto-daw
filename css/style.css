@@ -14,7 +14,6 @@
 }
 
 .box-animation {
-  cursor: pointer;
   position: relative;
   padding: 12px 24px;
   background: rgb(228, 153, 255);
@@ -39,8 +38,8 @@
 .box-animation:after {
   top: -1px;
   left: -1px;
-  border-top: 4px solid black;
-  border-left: 4px solid black;
+  border-top: 8px solid black;
+  border-left: 8px solid black;
 }
 .box-animation:before {
   bottom: -1px;
